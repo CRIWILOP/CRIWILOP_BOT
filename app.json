@@ -1,0 +1,21 @@
+{
+  "name": "Criwilop_bot",
+  "description": "Me gusta tocar el piano...ฅ^•ﻌ•^ฅ",
+  "repository": "https://github.com/CRIWILOP/CRIWILOP_BOT",
+  "logo": "https://github.com/CRIWILOP/CRIWILOP_BOT",
+  "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
+  "buildpacks": [
+  {
+    "url": "heroku/nodejs"
+  },
+  {
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+  },
+  {
+    "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+  },
+  {
+    "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+  }    
+ ]
+}
