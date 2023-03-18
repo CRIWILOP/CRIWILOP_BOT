@@ -120,7 +120,7 @@ global.verificado = fs.readFileSync('./storage/image/verificado.png')
 //᭥🌿᭢━━━━━━━◜𝑳𝑰𝑵𝑲𝑺◞━━━━━━━᭥🌿᭢
 global.linkgc = 'https://chat.whatsapp.com/GgvDgj9oS01IA00wrOAsRD'
 global.nycuser = 'https://github.com/CRIWILOP'
-global.script = 'https://https://github.com/CRIWILOP/CRIWILOP_BOT'
+global.script = 'https://github.com/CRIWILOP/CRIWILOP_BOT'
 //╰─────────────────────╯
 
 
