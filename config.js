@@ -118,9 +118,9 @@ global.verificado = fs.readFileSync('./storage/image/verificado.png')
 
 
 //᭥🌿᭢━━━━━━━◜𝑳𝑰𝑵𝑲𝑺◞━━━━━━━᭥🌿᭢
-global.linkgc = 'https://chat.whatsapp.com/D2kkLywqKa0G3IfIm7eNf2'
-global.nycuser = 'https://github.com/ALBERTO9883'
-global.script = 'https://github.com/ALBERTO9883/NyanCatBot-MD'
+global.linkgc = 'https://chat.whatsapp.com/GgvDgj9oS01IA00wrOAsRD'
+global.nycuser = 'https://github.com/CRIWILOP'
+global.script = 'https://https://github.com/CRIWILOP/CRIWILOP_BOT'
 //╰─────────────────────╯
 
 
