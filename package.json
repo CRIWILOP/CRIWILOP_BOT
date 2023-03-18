@@ -1,5 +1,5 @@
 {
-    "name": "NyanCatBot-MD",
+    "name": "CRIWILOP_BOT-MD",
     "version": "1.0.0",
     "description": "Si tu quisieras esta noche ir a bailar un chachachá,  yo te puedo enamorar",
     "main": "index.js",
@@ -14,16 +14,16 @@
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
-    "homepage": "https://github.com/ALBERTO9883/NyanCatBot-MD",
+    "homepage": "https://github.com/CRIWILOP/CRIWILOP_BOT",
     "author": {
-        "name": "Alberto Acosta"
+        "name": "🍀❥⍣ᴄʀɪᴡɪʟᴏᴘ࿐⛦🍀"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ALBERTO9883/NyanCatBot-MD.git"
+        "url": "git+https://github.com/CRIWILOP/CRIWILOP_BOT.git"
     },
     "bugs": {
-        "url": "https://github.com/ALBERTO9883/NyanCatBot-MDissues"
+        "url": "https://github.com/CRIWILOP/CRIWILOP_BOTissues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
