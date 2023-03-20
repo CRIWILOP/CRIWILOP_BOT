@@ -99,7 +99,7 @@ global.author = `▸ ⍣ᴄʀɪᴡɪʟᴏᴘ࿐\n▸ ${dia}\n▸ ${tiempo}\n▸ 
 	
 
 //᭥🌼᭢━━━━◜𝑴𝑺𝑮 𝑫𝑬 𝑬𝑺𝑷𝑬𝑹𝑨◞━━━━᭥🌼᭢
-global.wait = '*⏳Aɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ... ฅ^•ﻌ•^ฅ⏳*'
+global.wait = '*⏳°*_Cargando_* Porfavor, *_Espera™_*⏳*'
 //╰─────────────────────╯
 
 
@@ -209,7 +209,7 @@ var ase = new Date(); var hour = ase.getHours(); switch(hour){ case 0: hour = 'u
   global.saludo = "Espero que tengas " + hour;
 //╰─────────────────────╯
 
-global.multiplier = 9999 
+global.multiplier = 9999999 
 
 global.rpg = {
   emoticon(string) {
