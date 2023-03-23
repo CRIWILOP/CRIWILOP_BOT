@@ -192,179 +192,172 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
               "title": "Aᴄᴇʀᴄᴀ ᴅᴇʟ ʙᴏᴛ🐈"
             }, {
               "rows": [{
-                "title": `Menú Completo🐱`,
-                "description": "Menú donde se encuentran todos los comandos",
-                "rowId": `${_p}menu`
-                }],
-              "title": "━━◌*̥₊「 1 」₊*̥◌━━"
-            }, {
-              "rows": [{
                 "title": `Menús📒`,
                 "description": "Lista de menús disponibles",
                 "rowId": `${_p}? main`
               }],
-              "title": "━━◌*̥₊「 2 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 1 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Información👨‍💻`,
                 "description": "Información acerca de listas y el bot",
                 "rowId": `${_p}? info`
               }],
-              "title": "━━◌*̥₊「 3 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 2 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Busquedas🔎`,
                 "description": "Menú de busquedas",
                 "rowId": `${_p}? search`
               }],
-              "title": "━━◌*̥₊「 4 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 3 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Juegos🕹`,
                 "description": "Menú de juegos",
                 "rowId": `${_p}? game`
               }],
-              "title": "━━◌*̥₊「 5 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 4 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Nivel Y Economía⚖`,
                 "description": "Menú sobre exp, monedas, billetera y nivel",
                 "rowId": `${_p}? xp`
               }],
-              "title": "━━◌*̥₊「 6 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 5 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `RPG⚔`,
                 "description": "Juegos RPG",
                 "rowId": `${_p}? rpg`
               }],
-              "title": "━━◌*̥₊「 7 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 6 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Registro🗃`,
                 "description": "Registros y Información de número de serie",
                 "rowId": `${_p}? rg`
               }],
-              "title": "━━◌*̥₊「 8 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 7 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Sticker🏞`,
                 "description": "Menú acerca de pegatinas",
                 "rowId": `${_p}? stiker`
               }],
-              "title": "━━◌*̥₊「 9 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 8 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Frases🥀`,
                 "description": "Menú de frases he historias",
                 "rowId": `${_p}? frases`
               }],
-              "title": "━━◌*̥₊「 10 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 9 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Imágenes🪴`,
                 "description": "Menú de imágenes y wallpapers",
                 "rowId": `${_p}? img`
               }],
-              "title": "━━◌*̥₊「 11 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 10 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Grupo👻`,
                 "description": "Menú sobre cosas relacionadas con grupos y admins",
                 "rowId": `${_p}? group`
               }],
-              "title": "━━◌*̥₊「 12 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 11 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Maker Y Logos📝`,
                 "description": "Menú de editor de fotos y logos",
                 "rowId": `${_p}? logo`
               }],
-              "title": "━━◌*̥₊「 13 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 12 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Des/Activar opciones⚙`,
                 "description": "Menu de opciones activables he desactivables",
                 "rowId": `${_p}? nable`
               }],
-              "title": "━━◌*̥₊「 14 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 13 」₊*̥◌━━"
             }, {
               "rows":[{
                 "title": `Premium🪪`,
                 "description": "Menu para usuarios premium",
                 "rowId": `${_p}? premium`
               }],
-              "title": "━━◌*̥₊「 15 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 14 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Anime㊗`,
                 "description": "Menú de otakos",
                 "rowId": `${_p}? nime`
               }],
-              "title": "━━◌*̥₊「 16 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 15 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Descargas📥`,
                 "description": "Menú de descargas",
                 "rowId": `${_p}? downloader`
               }],
-              "title": "━━◌*̥₊「 17 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 16 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Herramientas🧰`,
                 "description": "Menú de herramientas o funciones",
                 "rowId": `${_p}? tools`
               }],
-              "title": "━━◌*̥₊「 18 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 17 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Diversión🎭`,
                 "description": "Menú divertido",
                 "rowId": `${_p}? fun`
               }],
-              "title": "━━◌*̥₊「 19 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 18 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Base de Datos🗄`,
                 "description": "Comandos acerca de stickers con comandos",
                 "rowId": `${_p}? database`
               }],
-              "title": "━━◌*̥₊「 20 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 19 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title":  `Nsfw🔞`,
                 "description": "Comandos +18",
                 "rowId": `${_p}? nsfw`
               }],
-              "title": "━━◌*̥₊「 21 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 20 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Creador📌`,
                 "description": "Menú de comandos para el creador",
                 "rowId": `${_p}? owner`
               }],
-              "title": "━━◌*̥₊「 22 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 21 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Avanzado🖥`,
                 "description": "Comandos avanzados (owner)",
                 "rowId": `${_p}? advanced`
               }],
-              "title": "━━◌*̥₊「 23 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 22 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title":  `Efecto de Audios🔊`,
                 "description": "Categoría de efectos de audio",
                 "rowId": `${_p}? audio`
               }],
-              "title": "━━◌*̥₊「 24 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 23 」₊*̥◌━━"
             }, {
               "rows": [{
                 "title": `Votaciones🗳`,
                 "description": "Menú de comandos para iniciar o cerrar votaciones",
                 "rowId": `${_p}? vote`
               }],
-              "title": "━━◌*̥₊「 25 」₊*̥◌━━"
+              "title": "━━◌*̥₊「 24 」₊*̥◌━━"
             }]
           const listMessage = {
             text: `*┏━「🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀」━⊜*
