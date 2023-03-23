@@ -721,10 +721,12 @@ export async function participantsUpdate({ id, participants, action }) {
                     let about = (await this.fetchStatus(user).catch(console.error) || {}).status || '×'
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || Connection.conn.welcome || 'Bienvenido, @user').replace('@group', await this.getName(id)).replace('@date', date).replace('@bio', about).replace('@time', time).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || Connection.conn.bye || 'Adiós, @user')).replace('@user', '@' + user.split('@')[0]).replace('@date', date).replace('@bio', about).replace('@time', time)
-                        this.sendButton(id, text, groupMetadata.subject, pp, [
-                        [(action == 'add' ? 'Gracias ❤' : 'Adios 👋'), 'ura'],    
-                            ['Menú 📒', '/menu']
-                            ], fgclink, { contextInfo: { externalAdReply: { showAdAttribution: false, title: '🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀', body: global.botname, sourceUrl: global.linkgc, thumbnail: miniurl }}, mentions: [user]})
+                        let wel = await conn.getFile(`https://api.lolhuman.xyz/api/welcomeimage?apikey=${lolkeysapi}&img=${pp}&text=Hola,+Bienvenido+al+grupo`)
+let bye = await conn.getFile(`https://api.lolhuman.xyz/api/welcomeimage?apikey=${lolkeysapi}&img=${pp}&text=Se+fue+un+Burro`)
+
+
+ conn.sendFile(id, action === 'add' ? wel.data : bye.data,  'out.png', text, false, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: botname, body: `h`, mediaType: 2, sourceUrl: linkgc, thumbnail: miniurl}, mentionedJid: [user]}}, { quoted: false })
+                    
                     }
                 }
             }
@@ -750,7 +752,7 @@ export async function participantsUpdate({ id, participants, action }) {
                     let biot = await conn.fetchStatus(user).catch(_ => 'undefined')
   let bio = biot.status?.toString() || 'Sin Info'
             if (chat.detect)
-                this.sendButton(id, text, saludo, pp, [['Menú 📒', '/menu']], false, { contextInfo: { externalAdReply: { showAdAttribution: false, title: '🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀', body: global.botname, sourceUrl: global.linkgc, thumbnail: miniurl }}, mentions: this.parseMention(text) })
+                this.sendButton(id, text, saludo, pp, [['Menú 📒', '/menu']], false, { contextInfo: { externalAdReply: { showAdAttribution: false, title: '🍀❥⍣ᴄʀɪᴡɪʟᴏᴘ࿐⛦🍀', body: global.botname, sourceUrl: global.linkgc, thumbnail: miniurl }}, mentions: this.parseMention(text) })
             break
             }
             }
@@ -803,7 +805,7 @@ let date = d.toLocaleDateString('es', { day: 'numeric', month: 'long', year: 'nu
         let chat = global.db.data.chats[msg.chat] || {}
         if (chat.delete)
             return
-        await conn.relayMessage(msg.chat, { extendedTextMessage: { text: `┏━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━⬣\n┃🐢 *❏ Nombre:* @${participant.split`@`[0]}\n┃🕒 *❏ Hora:* ${time}\n┃📅 *❏ Fecha:* ${date}\n┃🥗 *❏ Enviando mensaje...*\n┗━━━━━━━━━━━━━━━━━⬣`, contextInfo: { externalAdReply: { title: '🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀', body: '', thumbnail: verificado, sourceUrl: linkgc }, mentionedJid: [participant] }}}, { quoted: fakemsg })
+        await conn.relayMessage(msg.chat, { extendedTextMessage: { text: `┏━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━⬣\n┃🐢 *❏ Nombre:* @${participant.split`@`[0]}\n┃🕒 *❏ Hora:* ${time}\n┃📅 *❏ Fecha:* ${date}\n┃🥗 *❏ Enviando mensaje...*\n┗━━━━━━━━━━━━━━━━━⬣`, contextInfo: { externalAdReply: { title: '🍀❥⍣ᴄʀɪᴡɪʟᴏᴘ࿐⛦🍀', body: '', thumbnail: verificado, sourceUrl: linkgc }, mentionedJid: [participant] }}}, { quoted: fakemsg })
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
         console.error(e)
