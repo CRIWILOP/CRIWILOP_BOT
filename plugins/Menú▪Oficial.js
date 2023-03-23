@@ -170,6 +170,31 @@ const defaultMenu = {
       greeting, level, limit, name, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role,
       readmore: readMore
     }
+    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+    
+    let buttons = [
+                    { buttonId: '!owner', buttonText: { displayText: 'Creador 🐢' }, type: 1 },
+                    { buttonId: '!infobot', buttonText: { displayText: 'Info 📌' }, type: 1 }
+                ]
+                let buttonMessage = {
+                    image: imgmenu,
+                    caption: text.trim(),
+                    mentions: conn.parseMention(text.trim()),
+                    footer: `*${greeting}*`,
+                    buttons: buttons,
+                    headerType: 4,
+                    contextInfo: {
+                    mentionedJid: [m.sender],
+                    externalAdReply: {
+                    showAdAttribution: true,
+                    mediaType: 'VIDEO',
+                    mediaUrl: 'https://pornhub.com',
+                    title: '🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀',
+                    body: '⍣ᴄʀɪᴡɪʟᴏᴘ࿐',
+                    thumbnail: miniurl,
+                    sourceUrl: global.linkgc
+                    }}
+                }
                 await conn.sendMessage(m.chat, { react: { text: '🐱', key: m.key }})
                 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 
