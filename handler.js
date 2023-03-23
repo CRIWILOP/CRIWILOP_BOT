@@ -722,7 +722,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         text = (action === 'add' ? (chat.sWelcome || this.welcome || Connection.conn.welcome || 'Bienvenido, @user').replace('@group', await this.getName(id)).replace('@date', date).replace('@bio', about).replace('@time', time).replace('@desc', groupMetadata.desc?.toString() || 'unknow') :
                             (chat.sBye || this.bye || Connection.conn.bye || 'Adiós, @user')).replace('@user', '@' + user.split('@')[0]).replace('@date', date).replace('@bio', about).replace('@time', time)
                         let wel = await conn.getFile(`https://api.lolhuman.xyz/api/welcomeimage?apikey=${lolkeysapi}&img=${pp}&text=Hola,+Bienvenido+al+grupo`)
-let bye = await conn.getFile(`https://api.lolhuman.xyz/api/welcomeimage?apikey=${lolkeysapi}&img=${pp}&text=Se+fue+un+Burro`)
+let bye = await conn.getFile(`https://api.lolhuman.xyz/api/welcomeimage?apikey=${lolkeysapi}&img=${pp}&text=espero+que+encuentres+paz+interior`)
 
 
  conn.sendFile(id, action === 'add' ? wel.data : bye.data,  'out.png', text, false, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: botname, body: `h`, mediaType: 2, sourceUrl: linkgc, thumbnail: miniurl}, mentionedJid: [user]}}, { quoted: false })
