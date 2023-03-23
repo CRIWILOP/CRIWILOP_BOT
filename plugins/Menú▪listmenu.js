@@ -186,7 +186,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
                 "rowId": `${_p}infobot`
               }, {
                 "title": "Grupos Oficiales🐾",
-                "description": "Grupos aliados de NyanCatBot",
+                "description": "Grupos aliados de 🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀",
                 "rowId": `${_p}gruposofc`
               }],
               "title": "Aᴄᴇʀᴄᴀ ᴅᴇʟ ʙᴏᴛ🐈"
@@ -469,9 +469,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
     throw e
   }
 }
-handler.help = ['listmenu']
+handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(listmenu|\?)$/i
+handler.command = /^(menu|\?)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
