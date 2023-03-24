@@ -29,7 +29,7 @@ let buttonMessage= {
 'headerType': 6 }
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })*/
 await conn.reply(m.chat, `Hola @${m.sender.split`@`[0]} si necesitas la ayuda de mi creador porfavor escribele al privado\n*- Solo asuntos importantes -*`, estilo, { mentions: [m.sender] })
-let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⍣ᴄʀɪᴡɪʟᴏᴘ࿐;;;\nFN:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nORG:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nTITLE:\nitem1.TEL;waid=50499698072:+573244488043\nitem1.X-ABLabel:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nX-WA-BIZ-DESCRIPTION:🍀❥Creador oficial de 🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀.\nX-WA-BIZ-NAME:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nEND:VCARD`
+let vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;⍣ᴄʀɪᴡɪʟᴏᴘ࿐;;;\nFN:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nORG:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nTITLE:\nitem1.TEL;waid=573244488043:+573244488043\nitem1.X-ABLabel:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nX-WA-BIZ-DESCRIPTION:🍀❥Creador oficial de 🍀❥៚⍣𝘾𝙍𝙄𝙒𝙄𝙇𝙊𝙋_𝘽𝙊𝙏࿐⛦🍀.\nX-WA-BIZ-NAME:⍣ᴄʀɪᴡɪʟᴏᴘ࿐\nEND:VCARD`
 await conn.sendMessage(m.chat, { contacts: { displayName: '⍣ᴄʀɪᴡɪʟᴏᴘ࿐', contacts: [{ vcard }] }}, {quoted: m})
 }
 handler.tags =['info']
