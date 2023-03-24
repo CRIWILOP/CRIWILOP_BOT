@@ -266,16 +266,6 @@ throw false
 }
 chat.antiSticker = isEnable
 break
-      
-case 'nsfw':
-case '+18':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.nsfw = isEnable          
-break
 
 case 'anticall':
 isAll = true
