@@ -104,7 +104,6 @@ const listMessage = {
 ┃⋄ welcome 
 ┃⋄ public 
 ┃⋄ chatbot 
-┃⋄ nsfw
 ┃⋄ autosticker
 ┃⋄ antitraba
 ┃⋄ antiprivado
