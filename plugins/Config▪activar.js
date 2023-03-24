@@ -31,14 +31,6 @@ let chatantilink = `*🏞️ | ANTILINKS*
 await conn.sendPresenceUpdate('composing', m.chat)
 conn.sendButton(m.chat, chatantilink, `*• Antilink ${chat.antiLink ? 'Activo ✅' : 'Desactivado ❎'}*\n*• ${groupMetadata.subject}*`, null, [['Activar✅', `.enable antilink`], ['Desactivar❎', '.disable antilink']], ownerfk)}
 //────────────────────────
-if (command == 'nsfw') {
-let chatnsfw = `*🔞 | NSFW*
-
-⊜ *_❝Active o Desactive para que funcionen los comandos +18❞_*
-`
-await conn.sendPresenceUpdate('composing', m.chat)
-conn.sendButton(m.chat, chatnsfw, `*• Nsfw ${chat.nsfw ? 'Activo ✅' : 'Desactivado ❎'}*\n*• ${groupMetadata.subject}*`, null, [['Activar✅', `.enable nsfw`], ['Desactivar❎', '.disable nsfw']], ownerfk)}
-//────────────────────────
 if (command == 'autosticker') {
 let chatautosticker = `*🌃 | AUTOSTICKER*
 
