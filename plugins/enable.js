@@ -19,14 +19,8 @@ const sections = [
 	rows: [
 	{title: "🗣 | CHATBOT", 
 	description: "⊜ ❝Active o Desactive para que el bot envíe mensajes,stickers y audios automáticamente❞",
-	rowId: `${usedPrefix + command} chatbot`}]},
-	 {
-	title: `━━◌*̥₊「 4 」₊*̥◌━━`,
-	rows: [
-	{title: "🔞 | NSFW", 
-	description: "⊜ ❝Active o Desactive para que funcionen los comandos +18❞",
-	rowId: `${usedPrefix + command} nsfw`}]}, {
-	title: `━━◌*̥₊「 5 」₊*̥◌━━`,
+	rowId: `${usedPrefix + command} chatbot`}]}, 
+	{title: `━━◌*̥₊「 5 」₊*̥◌━━`,
 	rows: [
 	{title: "🌅 | AUTO STICKERS", 
 	description: "⊜ ❝Active o Desactive para que toda imagen, videos o link se convierta en sticker❞",
