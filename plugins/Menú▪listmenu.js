@@ -42,7 +42,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
   'tools': 'Herramientas🧰',
   'fun': 'Diversión🎭',
   'database': 'Base de Datos🗄️',
-  'nsfw': 'Nsfw🔞', 
   'owner': 'Creador📌', 
   'advanced': 'Avanzado🖥️',
   'audio': 'Efecto de Audios🔊',
@@ -110,9 +109,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
   }
   if (teks == 'main') tags = {
     'main': 'Menús📒'
-    }
-  if (teks == 'nsfw') tags = {
-    'nsfw': 'Nsfw🔞'
     }
   if (teks == 'search') tags = {
     'search': 'Busquedas🔎'
@@ -321,13 +317,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command, __dirname }) => {
                 "title": `Base de Datos🗄`,
                 "description": "Comandos acerca de stickers con comandos",
                 "rowId": `${_p}? database`
-              }],
-              "title": "━━◌*̥₊「 19 」₊*̥◌━━"
-            }, {
-              "rows": [{
-                "title":  `Nsfw🔞`,
-                "description": "Comandos +18",
-                "rowId": `${_p}? nsfw`
               }],
               "title": "━━◌*̥₊「 20 」₊*̥◌━━"
             }, {
