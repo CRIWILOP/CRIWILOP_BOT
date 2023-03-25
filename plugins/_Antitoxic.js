@@ -1,4 +1,4 @@
-const toxicRegex = /puto|Puto|Puta|Vrga|Mrda|Mierda|mierda|pendejo|pendeja|Pendejo|Pendeja|verga|Verga| Pndj | pndj | pto | Pto | Pta | pta |hijueputa|Hijueputa|puta|rata| mrd |verga|vrga|hp|HP|Hp|UwU/i
+const toxicRegex = /puto|Puto|Puta|Vrga|Mrda|Mierda|mierda|pendejo|pendeja|Pendejo|Pendeja|verga|Verga| Pndj | pndj | pto | Pto | Pta | pta |hijueputa|Hijueputa|puta|rata| mrd |verga|vrga|hp|HP|Hp/i
 
 export async function before(m, { isAdmin, isBotAdmin, isOwner }) {
     if (m.isBaileys && m.fromMe)
