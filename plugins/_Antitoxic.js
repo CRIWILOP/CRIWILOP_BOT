@@ -10,7 +10,7 @@ export async function before(m, { isAdmin, isBotAdmin, isOwner }) {
     let bot = global.db.data.settings[this.user.jid] || {}
     const isToxic = toxicRegex.exec(m.text)
     
-    if (isToxic && !isOwner && !isAdmin) {
+    if (isToxic && chat.antiToxic && !isOwner && !isAdmin) {
        user.warn += 1
        if (!(user.warn >= 5)) await m.reply(`${user.warn == 1 ? `Hola *@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`}, decir la palabra (${isToxic}) está prohibido en este bot *${user.warn}/5* advertencia`, false, { mentions: [m.sender] })
     }
