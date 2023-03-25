@@ -14,7 +14,7 @@ conn.sendMessage(m.chat, { document: { url: `${linkdl}` }, mimetype: 'applicatio
 }
 handler.help = ['apk *<nombre>*']
 handler.tags = ['downloader']
-handler.command = ['apk', 'apk2'] 
+handler.command = ['apk'] 
 handler.register = true
 
 handler.limit = true
