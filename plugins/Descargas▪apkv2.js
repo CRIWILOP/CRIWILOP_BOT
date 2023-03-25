@@ -12,9 +12,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 conn.sendMessage(m.chat, { document: { url: `${linkdl}` }, mimetype: 'application/videos.android.package-archive', fileName: `apkdl2.apk` }, { quoted: m })
 } catch { m.reply('⚠️ *_Resultados no encontrados._*') }
 }
-handler.help = ['apkdl2 *<nombre de apk>*']
+handler.help = ['apk *<nombre>*']
 handler.tags = ['downloader']
-handler.command = ['dlapk2', 'apkdl2'] 
+handler.command = ['apk', 'apk2'] 
 handler.register = true
 
 handler.limit = true
