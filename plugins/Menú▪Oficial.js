@@ -172,8 +172,8 @@ const defaultMenu = {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     
     let buttons = [
-                    { buttonId: '!owner', buttonText: { displayText: 'Creador 🐢' }, type: 1 },
-                    { buttonId: '!infobot', buttonText: { displayText: 'Info 📌' }, type: 1 }
+                    { buttonId: '!owner', buttonText: { displayText: 'Creador 🐢' }, type: 0 },
+                    { buttonId: '!infobot', buttonText: { displayText: 'Info 📌' }, type: 0 }
                 ]
                 let buttonMessage = {
                     image: imgmenu,
