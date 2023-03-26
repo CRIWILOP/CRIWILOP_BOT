@@ -19,5 +19,5 @@ let listSections = []
     m.reply('⚠️ *_Resultados no encontrados, intentelo nuevamente más tarde._*')
   }
 }    
-handler.command = ['apk', 'app']
+handler.command = ['apksearch', 'searchapk']
 export default handler
