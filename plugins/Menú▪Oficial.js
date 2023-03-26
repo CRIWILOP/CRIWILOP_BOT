@@ -36,7 +36,7 @@ const defaultMenu = {
 ┃⋄ 🗓 *Fecha*: %date
 ┃⋄ 📅 *Día*: %week
 ┗━━◘
-
+%readmore
 ┏━━⊜ *_INFO USER_* ━⊜
 ┃⋄ 📇 *Nombre*:  %taguser
 ┃⋄ 🪙 *Monedas*: %limit
