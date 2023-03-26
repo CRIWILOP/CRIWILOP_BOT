@@ -5,10 +5,6 @@ import { xpRange } from '../lib/levelling.js'
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 let prem = global.prems.includes(m.sender.split`@`[0])
-let caption = `*⊜ USUARIOS PREMIUM🪪*
-` + prem.map(v => '- @' + v.replace(/@.+/, '')).join`\n`
-conn.reply(m.chat, caption, m, { mentions: conn.parseMention(caption) })
-}
 let tags = {
   'main': 'Menús📒',
   'info': 'Información👨‍💻',
@@ -61,7 +57,10 @@ const defaultMenu = {
 %readmore
 ┏━━━━━━━━━━━━━━┓
 ┃⋄ *_Características del Menú_*
-┃
+┃let caption = `*⊜ USUARIOS PREMIUM🪪*
+` + prem.map(v => '- @' + v.replace(/@.+/, '')).join`\n`
+conn.reply(m.chat, caption, m, { mentions: conn.parseMention(caption) })
+}
 ┃ •🪪 = *_Premium_*
 ┃ •🪙 = *_Monedas_*
 ┗━━━━━━━━━━━━━━┛\n
