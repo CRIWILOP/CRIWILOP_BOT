@@ -6,10 +6,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let res = await fg.igdl(args[0])
     for (let result of res.url_list) {
     conn.sendFile(m.chat, result, 'igdl.mp4', ``, m)}}
- handler.help = ['facebook'].map(v => v + ' *<url>*') 
- handler.tags = ['downloader'] 
- handler.command = /^((facebook|fb)(downloder|dl)?)$/i 
- handler.limit = true
+ handler.help = ['facebook'].map(v => v + ' *<url>*') 
+ handler.tags = ['downloader'] 
+ handler.command = /^((facebook|fb)(downloder|dl)?)$/i 
 handler.register = true
   
- export default handler
+ export default handler
