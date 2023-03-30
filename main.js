@@ -135,7 +135,7 @@ conn.ev.off('connection.update', conn.connectionUpdate)
 conn.ev.off('creds.update', conn.credsUpdate)
 }
   
-conn.welcome = '*• Holaa :D Bienvenido/a al grupo!!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *• Nombre:* @user\n🌿 *• Bio:* @bio\n🕒 *• Hora:* @time\n🗓️ *• Fecha:* @date\n\n- *🍀❥⍣ᴄʀɪᴡɪʟᴏᴘ࿐⛦🍀* -'
+conn.welcome = '*• Holaa :D Bienvenido/a al grupo!!*\n*━━━━━━━━━━━━━━━━*\n\n🌺 *• Nombre:* @user\n🌿 *• Bio:* @bio\n🕒 *• Hora:* @time\n🗓️ *• Fecha:* @date\n\n- *https://chat.whatsapp.com/GgvDgj9oS01IA00wrOAsRD* -'
 conn.bye = '*👋 Hasta pronto, no te extrañaremos XD!!*\n*━━━━━━━━━━━━━━━━*\n\n🐢 *• Nombre:* @user\n🎋 *• Bio:* @bio\n🕒 *• Hora:* @time\n🗓️ *• Fecha:* @date\n\n- *Salúdame a Maradona bro* -'
 conn.spromote = '*⎡ •⚠️ Nuevo Admin detectado ⚠️• ⎦*\n*━━━━━━━━━━━━━━━━*\n🐢 *• Nombre:* @user\n🕒 *• Hora:* @time\n🗓️ *• Fecha:* @date\n*━━━━━━━━━━━━━━━━*'
 conn.sdemote = '❏ 🍃 *_@user ha dejado de ser administrador._*'
